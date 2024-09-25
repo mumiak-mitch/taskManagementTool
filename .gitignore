@@ -9,7 +9,8 @@
 #**/settings.py
 db.sqlite3
 /media/
-#/static/
+/static/
+/staticfiles/
 
 # Environment files
 .env

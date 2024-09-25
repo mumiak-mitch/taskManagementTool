@@ -6,10 +6,10 @@
 
 # Django stuff:
 *.log
-**/settings.py
+#**/settings.py
 db.sqlite3
 /media/
-/static/
+#/static/
 
 # Environment files
 .env

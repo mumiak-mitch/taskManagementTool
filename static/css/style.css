@@ -1,0 +1,79 @@
+body {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: #f3eeee;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Adjust for tablets (768px and below) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+
+/* Adjust for mobile phones (576px and below) */
+@media (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Make links display in a single line */
+    .sidebar {
+        display: flex;
+        justify-content: space-around; /* Distribute links evenly */
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        display: inline-block; /* Change from block to inline for horizontal layout */
+        padding: 10px 15px; /* Adjust padding for better spacing */
+    }
+
+    /* Optional: Reduce font size for mobile */
+    .sidebar a {
+        font-size: 14px;
+    }
+}
